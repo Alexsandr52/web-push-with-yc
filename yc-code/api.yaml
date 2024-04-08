@@ -1,0 +1,22 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: api-notif
+
+x-yc-apigateway:
+  cors:
+    origin: '*'
+    methods: '*'
+    allowedHeaders: '*'
+
+servers:
+- url: https://d5dp14he6ds6fmac8vcb.apigw.yandexcloud.net
+paths:
+  /add:
+    post:
+      x-yc-apigateway-integration:
+        type: cloud-functions
+        function_id: d4ebocp41801icfilulr
+        service_account_id: ajemd3hua6s5l5ujdnk5
+      operationId: new-user
+
