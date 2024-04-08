@@ -7,7 +7,7 @@ if('serviceWorker' in navigator){
 // Подписка на уведомления
 async function send(){
     // Регестрируем serviceWorker и даем ему область видимости 
-    const register = await navigator.serviceWorker.register('/client/worker.js',{scope: '/client/'});
+    const register = await navigator.serviceWorker.register('worker.js',{scope: '/'});
 
     // Для запроса у пользователя разрешения на получение уведомлений (push-уведомлений) и подписки на них.
     const subscription = await register.pushManager.subscribe({
