@@ -1,0 +1,9 @@
+{
+    "name": "Node ex push",
+    "short_name": "Node Push",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#007bff"
+  }
+  

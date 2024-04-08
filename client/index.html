@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Node ex push</title>
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <img src="https://felixgerschau.com/static/999d7328ea6071bc65e18597e4e35c1a/5a190/web-push-example-app-flow.png">
-    <script src="cient.js"></script>
+    <script src="client.js"></script>
+    <!-- <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('worker.js').then(function(registration) {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+              console.log('ServiceWorker registration failed: ', err);
+            });
+          });
+        }
+    </script> -->
 </body>
 </html>
